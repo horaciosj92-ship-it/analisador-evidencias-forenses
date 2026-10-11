@@ -1,0 +1,195 @@
+{
+  "tipo_documento": "Relatório técnico preliminar",
+  "data_geracao_utc": "2026-10-11T21:25:14.219671+00:00",
+  "metodo": "Inventário de arquivo, SHA-256, leitura de propriedades da imagem e inclusão do manifesto C2PA disponível.",
+  "imagem": {
+    "nome": "capa_shorts_causos_biblicos.png",
+    "caminho": "/content/capa_shorts_causos_biblicos.png",
+    "tamanho_bytes": 7372958,
+    "sha256": "286af77aaad686bfc4b6cdd02099b3f5920ccce60bfc74db05646ac246b9f9d9",
+    "formato": "PNG",
+    "dimensoes_pixels": [
+      1440,
+      2560
+    ],
+    "modo_cor": "RGBA",
+    "metadados_info_chaves": [
+      "aspect"
+    ]
+  },
+  "manifesto_c2pa": {
+    "arquivo": "/content/manifesto_c2pa_capa.json",
+    "sha256_arquivo_manifesto": "e5af7b5050dab232747d06547fb91559965db7c17154058a6363175c88fa68fb",
+    "conteudo": {
+      "arquivo_analisado": "capa_shorts_causos_biblicos.png",
+      "estado_validacao": "Valid",
+      "manifesto": {
+        "active_manifest": "urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea",
+        "manifests": {
+          "urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea": {
+            "claim_generator": "CapCut/ c2pa-tool/0.1.0 c2pa-rs/0.31.3",
+            "format": "png",
+            "instance_id": "xmp:iid:16fe41a7-dafb-4af5-bd4c-bed1b8e33d02",
+            "thumbnail": {
+              "format": "image/png",
+              "identifier": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.thumbnail.claim.png"
+            },
+            "assertions": [
+              {
+                "label": "c2pa.actions.v2",
+                "data": {
+                  "actions": [
+                    {
+                      "action": "c2pa.created",
+                      "when": "2026-10-11T14:48:54Z",
+                      "softwareAgent": "CapCut/",
+                      "parameters": {
+                        "from": "348188"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "signature_info": {
+              "alg": "Ps256",
+              "issuer": "Bytedance Pte. Ltd.",
+              "common_name": "certificate@bytedance.com",
+              "cert_serial_number": "26391988440968650247955943466"
+            },
+            "label": "urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea",
+            "claim_version": 1
+          }
+        },
+        "validation_status": [
+          {
+            "code": "signingCredential.untrusted",
+            "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+            "explanation": "signing certificate untrusted"
+          }
+        ],
+        "validation_results": {
+          "activeManifest": {
+            "success": [
+              {
+                "code": "claimSignature.insideValidity",
+                "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+                "explanation": "claim signature valid"
+              },
+              {
+                "code": "claimSignature.validated",
+                "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+                "explanation": "claim signature valid"
+              },
+              {
+                "code": "assertion.hashedURI.match",
+                "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.thumbnail.claim.png",
+                "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+              },
+              {
+                "code": "assertion.hashedURI.match",
+                "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.actions",
+                "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions"
+              },
+              {
+                "code": "assertion.hashedURI.match",
+                "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.hash.data",
+                "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data"
+              },
+              {
+                "code": "assertion.dataHash.match",
+                "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.hash.data",
+                "explanation": "data hash valid"
+              }
+            ],
+            "informational": [
+              {
+                "code": "signingCredential.ocsp.skipped",
+                "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+                "explanation": "OCSP fetching skipped"
+              }
+            ],
+            "failure": [
+              {
+                "code": "signingCredential.untrusted",
+                "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+                "explanation": "signing certificate untrusted"
+              }
+            ]
+          },
+          "specVersion": "2.4.0"
+        },
+        "validation_state": "Valid"
+      },
+      "resultados_validacao": {
+        "activeManifest": {
+          "success": [
+            {
+              "code": "claimSignature.insideValidity",
+              "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+              "explanation": "claim signature valid"
+            },
+            {
+              "code": "claimSignature.validated",
+              "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+              "explanation": "claim signature valid"
+            },
+            {
+              "code": "assertion.hashedURI.match",
+              "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.thumbnail.claim.png",
+              "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.thumbnail.claim.png"
+            },
+            {
+              "code": "assertion.hashedURI.match",
+              "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.actions",
+              "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.actions"
+            },
+            {
+              "code": "assertion.hashedURI.match",
+              "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.hash.data",
+              "explanation": "hashed uri matched: self#jumbf=c2pa.assertions/c2pa.hash.data"
+            },
+            {
+              "code": "assertion.dataHash.match",
+              "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.assertions/c2pa.hash.data",
+              "explanation": "data hash valid"
+            }
+          ],
+          "informational": [
+            {
+              "code": "signingCredential.ocsp.skipped",
+              "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+              "explanation": "OCSP fetching skipped"
+            }
+          ],
+          "failure": [
+            {
+              "code": "signingCredential.untrusted",
+              "url": "self#jumbf=/c2pa/urn:uuid:ad0eba1f-aa2a-4d45-813a-17aef5277aea/c2pa.signature",
+              "explanation": "signing certificate untrusted"
+            }
+          ]
+        },
+        "specVersion": "2.4.0"
+      }
+    }
+  },
+  "previa": {
+    "nome": "previa_relatorio.jpg",
+    "tamanho_bytes": 145316,
+    "sha256": "d0ad9205113c0d9d811fcb02d0c1dee5dc8cbf4777bf8ca076f6bb1e48ad7b73",
+    "formato": "JPEG",
+    "dimensoes_pixels": [
+      619,
+      1100
+    ]
+  },
+  "limitacoes": [
+    "Este relatório não é laudo pericial oficial.",
+    "A geração deste documento não autentica a identidade do autor da imagem.",
+    "O hash identifica o arquivo analisado, mas não comprova autoria nem data original.",
+    "O manifesto é documentado como fornecido; não se presume confiança plena da credencial.",
+    "Não se infere uso ou ausência de inteligência artificial sem evidência específica.",
+    "A data de geração deste relatório não é a data de criação original da imagem."
+  ]
+}
