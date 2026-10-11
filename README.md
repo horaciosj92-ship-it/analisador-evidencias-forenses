@@ -1,26 +1,32 @@
 # Analisador de Evidências Forenses
 
-Ferramenta em Python para inventário de arquivos, cálculo de hashes
-SHA-256, identificação de arquivos com conteúdo idêntico e geração
-de relatório técnico em formato TXT.
+Ferramenta desenvolvida em Python para inventariar arquivos digitais, calcular hashes SHA-256, identificar arquivos com conteúdo idêntico e gerar relatórios técnicos em formato TXT.
+
+Projeto de estudo e portfólio voltado à programação Python e à análise preliminar de evidências digitais.
 
 ## Funcionalidades
 
 - Inventário recursivo de arquivos e subpastas.
-- Cálculo de hash SHA-256 por arquivo.
-- Registro de caminho, tamanho e extensão.
-- Identificação de grupos de arquivos com o mesmo SHA-256.
-- Tratamento de erros de leitura.
+- Cálculo de hash SHA-256 para cada arquivo.
+- Registro de caminho, tamanho e extensão dos arquivos.
+- Identificação de grupos de arquivos com hashes SHA-256 idênticos.
+- Tratamento de erros durante a leitura.
 - Geração automática de relatório TXT com data e hora em UTC.
+- Testes automatizados das principais funcionalidades.
 
-## Requisitos
+## Tecnologias utilizadas
 
 - Python 3.9 ou superior.
-- Nenhuma biblioteca externa é necessária.
+- `pathlib` — navegação pelo sistema de arquivos.
+- `hashlib` — cálculo de hashes SHA-256.
+- `datetime` — registro de data e hora.
+- `unittest` — testes automatizados.
+
+Não são necessárias bibliotecas externas para executar o analisador e os testes.
 
 ## Como executar
 
-Execute no terminal:
+Com o Python instalado, abra um terminal na pasta do projeto e execute:
 
 ```bash
 python analisador.py
@@ -28,35 +34,29 @@ python analisador.py
 
 Informe o caminho da pasta que deseja analisar quando solicitado.
 
-O relatório será salvo no diretório pai da pasta analisada,
-com um nome semelhante a:
+O programa gera um relatório TXT no diretório pai da pasta analisada, com um nome semelhante a:
 
 `relatorio_forense_20261011_201338.txt`
 
-## Exemplo de teste
+Recomenda-se realizar testes com cópias de arquivos, evitando modificar evidências originais.
 
-Crie dois arquivos com conteúdo idêntico e um terceiro com conteúdo
-diferente. O programa deverá identificar os dois primeiros como um
-grupo de duplicados, desde que seus hashes SHA-256 coincidam.
+## Como executar os testes automatizados
 
-## Limitações e cuidados
+Na pasta do projeto, execute:
 
-- O hash SHA-256 auxilia na verificação de integridade, mas não comprova
-  sozinho a autenticidade, a origem ou a cadeia de custódia da evidência.
-- Esta versão não implementa aquisição forense, bloqueio de escrita,
-  assinatura digital ou registro auditável de cadeia de custódia.
-- Faça testes com cópias de arquivos e evite modificar evidências originais.
-- O relatório registra os resultados obtidos durante a execução;
-  não constitui, isoladamente, um laudo pericial.
+```bash
+python -m unittest -v test_analisador.py
+```
 
-## Tecnologias
+Os sete testes implementados verificam o cálculo de SHA-256, a comparação de arquivos, a identificação de duplicados e a geração do relatório.
 
-- Python
-- pathlib
-- hashlib
-- datetime
+## Limitações e cuidados forenses
 
-## Objetivo
+- O hash SHA-256 permite comparar a integridade do conteúdo, mas, isoladamente, não comprova autoria, origem, data de criação ou autenticidade de uma evidência.
+- A ferramenta não implementa aquisição forense, bloqueio de escrita, assinatura digital ou cadeia de custódia auditável.
+- Os resultados dependem das condições dos arquivos e do ambiente durante a análise.
+- O relatório gerado é técnico e preliminar; não constitui, isoladamente, um laudo pericial oficial.
 
-Projeto de estudo e portfólio voltado à programação Python aplicada
-ao inventário e à análise preliminar de arquivos digitais.
+## Objetivo do projeto
+
+Demonstrar conhecimentos práticos de Python, manipulação de arquivos, integridade digital por hash, geração de relatórios e testes automatizados aplicados à análise preliminar de arquivos digitais.
