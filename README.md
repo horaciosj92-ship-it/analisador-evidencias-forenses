@@ -1,39 +1,62 @@
 # Analisador de Evidências Forenses
 
-## Sobre o projeto
+Ferramenta em Python para inventário de arquivos, cálculo de hashes
+SHA-256, identificação de arquivos com conteúdo idêntico e geração
+de relatório técnico em formato TXT.
 
-Este projeto é um laboratório de estudos em Python voltado à Informática Forense e à análise de evidências digitais.
+## Funcionalidades
 
-O objetivo é desenvolver, passo a passo, uma ferramenta educacional para organizar arquivos, verificar sua integridade e gerar relatórios técnicos.
+- Inventário recursivo de arquivos e subpastas.
+- Cálculo de hash SHA-256 por arquivo.
+- Registro de caminho, tamanho e extensão.
+- Identificação de grupos de arquivos com o mesmo SHA-256.
+- Tratamento de erros de leitura.
+- Geração automática de relatório TXT com data e hora em UTC.
 
-## Funcionalidades planejadas
+## Requisitos
 
-- Inventário de arquivos e identificação de extensões.
-- Cálculo de hashes SHA-256 para verificação de integridade.
-- Identificação de arquivos com conteúdo duplicado.
-- Verificação preliminar de possíveis divergências entre extensão e assinatura do arquivo.
-- Exportação de relatórios em CSV e JSON.
-- Testes automatizados para validar as funcionalidades.
+- Python 3.9 ou superior.
+- Nenhuma biblioteca externa é necessária.
+
+## Como executar
+
+Execute no terminal:
+
+```bash
+python analisador.py
+```
+
+Informe o caminho da pasta que deseja analisar quando solicitado.
+
+O relatório será salvo no diretório pai da pasta analisada,
+com um nome semelhante a:
+
+`relatorio_forense_20261011_201338.txt`
+
+## Exemplo de teste
+
+Crie dois arquivos com conteúdo idêntico e um terceiro com conteúdo
+diferente. O programa deverá identificar os dois primeiros como um
+grupo de duplicados, desde que seus hashes SHA-256 coincidam.
+
+## Limitações e cuidados
+
+- O hash SHA-256 auxilia na verificação de integridade, mas não comprova
+  sozinho a autenticidade, a origem ou a cadeia de custódia da evidência.
+- Esta versão não implementa aquisição forense, bloqueio de escrita,
+  assinatura digital ou registro auditável de cadeia de custódia.
+- Faça testes com cópias de arquivos e evite modificar evidências originais.
+- O relatório registra os resultados obtidos durante a execução;
+  não constitui, isoladamente, um laudo pericial.
 
 ## Tecnologias
 
 - Python
-- Biblioteca padrão do Python
-- Git e GitHub
-- Testes automatizados com `unittest`
+- pathlib
+- hashlib
+- datetime
 
-## Metodologia e cuidados
+## Objetivo
 
-O laboratório será desenvolvido com arquivos de teste próprios ou amostras seguras. A ferramenta deverá preservar os arquivos analisados, sem modificá-los.
-
-Uma divergência entre extensão e assinatura é apenas um indício para investigação, não uma prova de fraude.
-
-Este projeto tem finalidade educacional e não substitui ferramentas forenses validadas nem procedimentos formais de aquisição e preservação de evidências.
-
-## Status
-
-Em desenvolvimento — projeto de aprendizagem prática em Python e Informática Forense.
-
-## Autor
-
-Horácio Justino
+Projeto de estudo e portfólio voltado à programação Python aplicada
+ao inventário e à análise preliminar de arquivos digitais.
